@@ -1,1 +1,3 @@
  nix nixos ranger w3m git zsh
+ sort
+git   nix-nixos  ranger-w3m-zsh
