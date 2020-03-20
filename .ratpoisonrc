@@ -1,0 +1,92 @@
+# 1 - общая настройка
+# время вывода сообщений ratpoison устанавливаем в 1 секунду
+msgwait 3
+# выключаем приветствие
+#startup_message off
+# при переходе на другой буфер, курсор не появится там, где был до этого
+warp off
+# папка изменяется на домашнюю, удобно, если вдруг ratpoison стартует из
+# другой директории, то вновь открытые эмуляторы терминалов - используют домашнюю папку
+chdir /home/z0
+# ширина рамки вокруг окон
+set border 0
+# ширина рамки вокруг окон ratpoison
+set barborder 0
+# расположения вывода ratpoison
+# s - юг(низ), n - север(верх), c - центр
+# e - восток(право) и w - запад(лево) комбинируются с обозначениями выше
+# к примеру, nw - расположения сообщений ratpoison сверху-слева
+set bargravity s
+# остапы по оси x и y от текста в сообщениях оконного менеджера
+set barpadding 0 0
+# цвет шрифта
+set fgcolor #141200
+# цвет фона
+set bgcolor #9ed0f1
+
+# 2 - настройка рабочих столов
+# запуск 6 рабочих столов
+#exec rpws init 3
+# хоткеи для переключения между ними
+definekey top s-1 exec rpws 1
+definekey top s-2 exec rpws 2
+definekey top s-3 exec rpws 3
+#definekey top s-4 exec rpws 4
+#definekey top s-5 exec rpws 5
+#definekey top s-6 exec rpws 6
+# хоткеи для отправки окна на определенный рабочий стол
+definekey top s-F1 exec rpws move1
+definekey top s-F2 exec rpws move2
+definekey top s-F3 exec rpws move3
+#definekey top s-F4 exec rpws move4
+#definekey top s-F5 exec rpws move5
+#definekey top s-F6 exec rpws move6
+# Super + стрелки влево-вправо - переключение между столами
+definekey top s-Right exec rpws next
+definekey top s-Left  exec rpws prev
+# Super + стрелки вверх-вниз - отправка окон на следующий-предыдущий рабочий стол
+definekey top s-Up    exec rpws movenext
+definekey top s-Down  exec rpws moveprev
+
+# 3 - хоткеи для часто используемых приложений и собственных скриптиков
+unbind c
+bind c exec lxterminal
+definekey top s-f exec chromium-browser
+#definekey top s-t exec sakura
+#definekey top s-b exec pcmanfm
+#definekey top s-e exec emacs
+#definekey top s-r exec transmission-gtk
+#definekey top s-l exec libreoffice
+#definekey top Print exec ~/bin/screenshot.sh
+#definekey top s-w exec gksudo ~/bin/webserver.sh 
+#definekey top s-m exec ~/bin/playrat_show
+# так как все комбинации клавишь ratpoison'a по дефолту начинаются с C-t
+# то в приложениях, в которых комбинация C-t используется могут возникать
+# проблемы( к примеру, новая вкладка в firefox ), теперь сочитания C-t
+# генерируется по нажатию M(alt)-t
+definekey top M-t meta
+# вывод времение
+#definekey top s-a time
+# по нажатию клавиши insert вызывается консолька ratpoison'a с надписью exec
+# 'exec приложение' служит для запуска приложения, в итоге, для того, чтобы
+# запустить какое-либо приложение нам будет достаточно нажать insert, ввести
+# название программы и нажать enter
+#definekey top Insert colon exec 
+# задаем ширину ввода
+#set inputwidth 1440
+# при нажатии Pause закрываем окно
+#definekey top Pause delete
+# использование привычной alt-tab для смены окна
+definekey top M-Tab next
+
+# 4 - настройка шрифта, обоев и курсора
+# устанавливаем шрифт для вывода ratpoison'a
+#set font  -*-terminus-medium-*-*-*-10-*-*-*-*-*-*-*
+# устанавливаем обои с помощью feh
+#exec feh --bg-center ~/images/blue.jpg
+# активизируем курсор
+exec xsetroot -cursor_name left_ptr
+
+# 5 - оконный менеджер готов к использованию, действия после старта
+# запускаем firefox после старта ratpoison
+#exec firefox
