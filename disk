@@ -1,0 +1,12 @@
+Filesystem      Size  Used Avail Use% Mounted on
+devtmpfs         80M     0   80M   0% /dev
+tmpfs           800M     0  800M   0% /dev/shm
+tmpfs           400M  4.6M  396M   2% /run
+tmpfs           800M  360K  800M   1% /run/wrappers
+/dev/sda2       289G  2.2G  272G   1% /
+tmpfs           800M     0  800M   0% /sys/fs/cgroup
+tmpfs           160M     0  160M   0% /run/user/0
+tmpfs           160M     0  160M   0% /run/user/1000
+Fri Mar 20 22:46:27 MSK 2020
+2.1G	/nix/store/
+2524
