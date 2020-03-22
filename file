@@ -3,3 +3,6 @@
 git   nix-nixos  ranger-w3m-zsh
 git junk-file comand git  nix-ranger-w3m
 
+sh=curl wttr.in/Lugansk
+
+
