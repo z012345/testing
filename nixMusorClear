@@ -1,0 +1,27 @@
+!master ~/testing> nix-store --gc
+finding garbage collector roots...
+removing stale link from '/nix/var/nix/gcroots/auto/asjfc3f5nris6vqrhh37nvrbwml7iprh' to '/tmp/nix-build-2237-0/result'
+removing stale link from '/nix/var/nix/gcroots/auto/7psg02d6zvbg9n1qm4bidhmkasbcq503' to '/tmp/nix-build-2209-0/result'
+removing stale link from '/nix/var/nix/gcroots/auto/wwjd8v3v7lkasc43wpncq8hh7hrzfz84' to '/tmp/nixos-rebuild.cJdvAA/nix'
+removing stale link from '/nix/var/nix/gcroots/auto/i1grzva30515aabbn1jyfj4jp3h07n8d' to '/tmp/nixos-rebuild.cJdvAA/nix.drv'
+deleting garbage...
+deleting '/nix/store/x7vqi78gkhb3n1n1c4w4bgkakbyv5sq0-lndir-1.0.3'
+deleting '/nix/store/32k2n1bk3cyil6qi6m3g0l2n32xhlz6r-libxslt-1.1.33-bin'
+deleting '/nix/store/3g2pkmc1s9ycjaxaqc5hrzmq05r5ywbi-stdenv-linux'
+deleting '/nix/store/svgb32f5pfqsl60gpsr1kfjhd7xzb3j8-unit-console-getty.service-disabled'
+deleting '/nix/store/1mwl1ycqdxqs9g1g916q3pp65vp01kdl-texinfo-6.5'
+deleting '/nix/store/j8fq1ksp37w88rx80blzazldi17f3x7s-gnumake-4.2.1'
+deleting '/nix/store/ibzfa0j7piizpy8a6gfybfmgdlsvh1rp-getconf-1003.1-2008'
+deleting '/nix/store/7d4q9alpabci4635ampcy3f79qnlsanc-libxslt-1.1.33'
+deleting '/nix/store/z63d2k51vy8p5m8gyar251iqnh8wzwcr-dbus-catalog.xml'
+deleting '/nix/store/kncarzyhspzsplkcmmyiqg2cavrwr373-builder.pl'
+deleting '/nix/store/lcnmpp44h2c3rfhqbs730amyhg78qrjm-stage-2-init.sh'
+deleting '/nix/store/c6r2z2jb8mp96pkcvhfhgaba5qzyp65a-desktop-file-utils-0.24'
+deleting '/nix/store/2xwxj5qrrc71asdk1wyq19nz9k845pzs-patchelf-0.9'
+deleting '/nix/store/a9p067ga3bbmsrvarb2fqdwzw589k8pc-nixos-19.09'
+deleting '/nix/store/trash'
+deleting unused links...
+note: currently hard linking saves -0.00 MiB
+14 store paths deleted, 11.03 MiB freed
+!master ~/testing>
+Пн мар 23 08:57:07 MSK 2020
