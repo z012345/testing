@@ -8,4 +8,5 @@ nixos https://nixos.org/channels/nixos-19.09
 variables are set, either log in again, or type
 
   . /home/ni/.nix-profile/etc/profile.d/nix.sh
-
+nix-info -m 
+nix-channel --list nix-channel --update
