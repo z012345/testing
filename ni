@@ -1,4 +1,6 @@
 https://nixos.org/manual/nix/stable/#ch-upgrading-nix
+sudo mpg123 http://srv3.listen.radiogora.ru:800/jazzy320
+
 
 https://www.lenakso.top/chto-takoe-git-clone-i-kak-klonirovat-repozitorij/
 https://nixos.online/posts/NixOS_channels/
